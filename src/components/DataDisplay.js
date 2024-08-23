@@ -1,4 +1,3 @@
-// src/components/DataDisplay.js
 import React, { useEffect, useState } from 'react';
 import { fetchData } from '../services/apiService';
 
@@ -30,7 +29,7 @@ const DataDisplay = () => {
       <h1>Data Display</h1>
       <ul>
         {data.map(item => (
-          <li key={item.id}>{item.name}</li> // Ajuste conforme a estrutura dos dados
+          <li key={item.id}>{item.name}</li>
         ))}
       </ul>
     </div>

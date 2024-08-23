@@ -1,7 +1,6 @@
-// src/components/Login.js
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom'; // Importar useNavigate corretamente
+import { useNavigate } from 'react-router-dom'; 
 import './Login.css';
 
 const Login = () => {
@@ -9,7 +8,7 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
 
-    const navigate = useNavigate(); // Criar uma instância do hook useNavigate
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -19,16 +18,14 @@ const Login = () => {
                 password
             });
 
-            // Armazenar o token (por exemplo, em localStorage)
             localStorage.setItem('token', response.data.token);
 
-            // Redirecionar para a página /motos após o login bem-sucedido
             console.log('Login successful:', response.data);
-            navigate('/motos'); // Usar navigate para redirecionar
+            navigate('/motos');
 
         } catch (error) {
-            console.error('Error during login:', error.response ? error.response.data : error.message);
-            setError('Login failed. Please check your credentials.');
+            console.error('Erro durante o login:', error.response ? error.response.data : error.message);
+            setError('Login falhou. Revise suas credenciais.');
         }
     };
 

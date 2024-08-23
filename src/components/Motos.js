@@ -1,15 +1,12 @@
-// src/components/Motos.js
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Importar useNavigate
+import { useNavigate } from 'react-router-dom';
 
 const Motos = () => {
-    const navigate = useNavigate(); // Criar uma instância do hook useNavigate
+    const navigate = useNavigate();
 
     const handleLogout = () => {
-        // Remover o token do localStorage
         localStorage.removeItem('token');
 
-        // Redirecionar para a página de login
         navigate('/login');
     };
 
@@ -17,7 +14,7 @@ const Motos = () => {
         <div className="motos-container">
             <h2>Motos</h2>
             {/* Adicione o conteúdo da página de motos aqui */}
-            <button onClick={handleLogout}>Sair</button> {/* Botão de sair */}
+            <button onClick={handleLogout}>Sair</button> {}
         </div>
     );
 };

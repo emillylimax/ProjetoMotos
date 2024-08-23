@@ -1,7 +1,6 @@
-// src/services/apiService.js
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3000'; // Substitua pela URL da sua API
+const API_URL = 'http://localhost:3000';
 
 export const fetchData = async () => {
   try {
