@@ -64,8 +64,10 @@ const Register = () => {
                     />
                 </div>
                 {error && <p className="error">{error}</p>}
-                <button type="submit">Cadastrar</button>
-                <button type="button" onClick={() => navigate('/login')}>Voltar</button> {/* Botão de voltar */}
+                <div className="button-container">
+                    <button type="submit">Cadastrar</button>
+                    <button type="button" className="back-button" onClick={() => navigate('/login')}>Voltar</button>
+                </div>
             </form>
         </div>
     );

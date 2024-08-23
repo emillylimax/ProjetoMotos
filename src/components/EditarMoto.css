@@ -3,9 +3,6 @@
     max-width: 800px;
     margin: 0 auto;
     font-family: Arial, sans-serif;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .register-container h2 {
@@ -44,8 +41,6 @@
 }
 
 .register-container .button-container {
-    display: flex;
-    justify-content: space-between;
     margin-top: 20px;
 }
 
@@ -58,16 +53,17 @@
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-right: 10px; 
 }
 
 .register-container button:hover {
     background-color: #0056b3;
 }
 
-.register-container button.back-button {
+.register-container button.cancel-button {
     background-color: #dc3545;
 }
 
-.register-container button.back-button:hover {
+.register-container button.cancel-button:hover {
     background-color: #c82333;
 }

@@ -4,7 +4,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import Motos from './components/Motos';
 import CadastrarMoto from './components/CadastrarMoto';
-import EditarMoto from './components/EditarMoto'; // Verifique se o nome está correto
+import EditarMoto from './components/EditarMoto'; 
 import PrivateRoute from './components/PrivateRoute';
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
                         element={<PrivateRoute element={<CadastrarMoto />} />}
                     />
                     <Route
-                        path="/editarMoto/:id" // Certifique-se de que a URL esteja correta
+                        path="/editarMoto/:id" 
                         element={<PrivateRoute element={<EditarMoto />} />}
                     />
                 </Routes>

@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
-import './CadastrarMoto.css';
+import './EditarMoto.css';
+
 
 const EditarMoto = () => {
     const { id } = useParams();

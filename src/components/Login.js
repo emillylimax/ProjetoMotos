@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
@@ -44,7 +44,7 @@ const Login = () => {
                     />
                 </div>
                 <div>
-                    <label htmlFor="password">Password:</label>
+                    <label htmlFor="password">Senha:</label>
                     <input
                         type="password"
                         id="password"
@@ -54,8 +54,10 @@ const Login = () => {
                     />
                 </div>
                 {error && <p className="error">{error}</p>}
-                <button type="submit">Login</button>
-                <button type="button" onClick={() => navigate('/register')}>Cadastrar</button> {/* Botão de cadastro */}
+                <div className="button-container">
+                    <button type="submit">Login</button>
+                    <button type="button" className="back-button" onClick={() => navigate('/register')}>Cadastrar</button>
+                </div>
             </form>
         </div>
     );
